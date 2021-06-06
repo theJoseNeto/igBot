@@ -1,18 +1,9 @@
 const puppeteer = require('puppeteer');
-const Validation = require('../validation/index');
-const { instagramUrl } = require('../../url');
+const Browser = require('../browser/index');
+const EngagementFunctions = require('./engagement_modules/index');
+const { instagramUrl } = require('../url')
 
-class Instagram {
-    constructor() {
-        this.page = null;
-        this.browser = null;
-    }
-
-    async launchBrowser() {
-        this.browser = await puppeteer.launch({ headless: false, ignoreDefaultArgs: ['--disable-extensions'] });
-        this.page = await this.browser.newPage();
-        this.page.goto(instagramUrl);
-    }
+class Instagram extends Browser, EngagementFunctions {
 
     async login(user, pass, time) {
         try {
