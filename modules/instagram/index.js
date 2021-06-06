@@ -22,6 +22,10 @@ class Instagram extends Browser {
         }
     }
 
+    
+
+
+
 
 }
 module.exports = Instagram;
