@@ -3,7 +3,7 @@ const Browser = require('../browser/index');
 const EngagementFunctions = require('./engagement_modules/index');
 const { instagramUrl } = require('../url')
 
-class Instagram extends Browser, EngagementFunctions {
+class Instagram extends Browser {
 
     async login(user, pass, time) {
         try {

@@ -1,8 +1,3 @@
-class EngagentFunctions{
-   async likePhotos() {}
-   async searchHashtags() {}
-   async followHashtags() {}
-   async reactStory() {}
-}
+class EngagentFunctions{}
 
 module.exports = EngagentFunctions;
