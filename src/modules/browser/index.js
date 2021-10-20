@@ -4,6 +4,7 @@ class Browser {
    constructor() {
       this.page = null;
       this.browser = null;
+
    }
 
    async launchBrowser() {
@@ -15,6 +16,8 @@ class Browser {
       this.page.goto(url);
 
    }
+
+
 }
 
 module.exports = Browser;

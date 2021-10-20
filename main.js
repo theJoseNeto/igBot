@@ -1,17 +1,13 @@
-const { instagramUrl } = require("./modules/url");
+require("dotenv").config();
+const { instagramUrl } = require('./src/modules/url');
+const IgBot = require('./src/modules/instagram/index');
 (async () => {
-   const randomTime = require('./modules/runtimeAcions/index')
-
-   require("dotenv").config();
-   const IgBot = require('./modules/instagram/index');
-
-   const USER = process.env.USER;
-   const PASS = process.env.PASS;
-
-   const bot = new IgBot()
-   await bot.launchBrowser()
+   const bot = new IgBot();
+   await bot.launchBrowser();
    await bot.newPage(instagramUrl);
-   await bot.login(USER, PASS, randomTime);
+   await bot.setCookieSession();
+   await bot.notificationsONOF(false);
+
 
 
 })();
