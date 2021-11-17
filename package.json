@@ -1,17 +1,18 @@
 {
-  "name": "instabot",
+  "name": "igbot",
   "version": "1.0.0",
-  "main": "main.js",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "puppeteer": "^5.5.0"
-  },
-  "devDependencies": {},
+  "main": "index.js",
+  "repository": "https://github.com/theJoseNeto/igBot.git",
+  "author": "theJoseNeto <joseneto180201@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "start": "node main.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "dependencies": {
+    "puppeteer": "^11.0.0",
+    "puppeteer-autoscroll-down": "^0.2.0"
+  }
 }

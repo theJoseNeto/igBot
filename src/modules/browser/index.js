@@ -1,6 +1,5 @@
 const puppeteer = require('puppeteer');
-
-class Browser {
+class Browser  {
    constructor() {
       this.page = null;
       this.browser = null;
