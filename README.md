@@ -1,42 +1,39 @@
-# IgBot
+# Ig-bot.
 
-É um bot feito usando puppeteer, voltado para o engajamento de pessoas que não podem ou não querem usar o instagram ou quer se divertir vendo um robô usar seu instagram por você ;)
+### Sobre o igbot.
 
-## O que o igBot faz? 
-*Por enquanto* o igBot entra na sua conta do instagram e segue os seguidores do perfil selecionado. 
+<p>*Por enquanto* o ig-bot é apenas um protótipo. Assim que você passar suas 
+credenciais, ele será capaz de entrar no seu instagram e rolar o feed.</p>
 
-## O que o igBot fará?
+### Lista de funcionalidades a serem adicionadas:
 
-Minha meta é fazer com que ele seja um usuário do instagram como você! 
+[] Likes em fotos do feed.
+[] Comentar em fotos do feed.
+[] Seguir perfis
+[] Seguir hashtags
+<br>
 
-## O que ele tem de especial: 
+<p> Tem mais sujestões? Me chama no <a href="https://instagram.com/thejoseneto.io/">instagram</a> e vamos trocar ideias</p>
+<br>
 
-1 - Por enquanto ele tem uma funcionalidade que faz com que ele não seja detectado pelo instagram através da velocidade de uso, pois o tempo de digitação é variado. 
-E todas as outras funcionalidades futuras também terão esse tempo variável.  
+### Como usar:
 
-2 - Ele segue uma quantidade de pessoas limitada pra que o instagram não bloqueie sua conta ;) 
+<li><code> git clone </code> nesse repositório.</li>
+<li><code>npm install</code> ou <code>yarn add</code></li>
+<li>Renomeie <code>example.env</code> para <code>.env</code></li>
+<li>Coloque suas credenciais no campos <code>USER</code> e <code>PASSWORD</code> dentro do arquivo <code>.env</code></li>
+<br>
 
-## Tecnologias 
+### Cuidados a serem tomados:
 
-Puppeteer;
+<p>1 -Caso vá usar isso em projetos, verifique na pasta <code>.gitignore</code> Se seu arquivo .env está incluso para que suas credenciais não sejam vazadas</p>
+<p>Não suba esse projeto para rodar fora da sua máquina, muito provavelmente você será detectado e banido do instagram.</p>
+<br>
+<br>
 
-## Como usar? 
+<p>Ps: Não me responsabilizo por perca da sua conta caso o instagram detecte o uso indevido dela através desse bot. Caso queria verificar os riscos que está correndo ao usar esse bot, aqui está <a href="https://paduanseta.jusbrasil.com.br/artigos/712851464/e-proibido-usar-automacao-no-instagram">o link</a> para você ler
+</p>
+<br>
+<br>
 
-1 - git init (Após clonar o repositório na sua máquina local);
-
-2 - no arquivo .env troque os valores do "USER" e "PASS" para seu login e senha do instagram; 
-
-3 - Ainda no .env troque o valor de "SEARCHUSER" para o nome de usuário que você quer pesquisar;
-
-4 - Essa é a melhor parte! Abra a pasta do projeto no terminal e digite "npm start" (sem as aspas);
-
-
-### Dicas para um uso melhor nessa versão 1.0: 
-
- - Veja se escreveu todos os dados corretamente! 
- - Use esse código na sua máquina local. Se você colocar na aws, por exemplo, o instagram vai detectar e bloquear sua conta!
-
-### Gostou da ideia? vamos conversar!!!
-
-joseneto180201@gmail.com 
-
+<p>Divirta-se!</p>
